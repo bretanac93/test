@@ -1,0 +1,7 @@
+module.exports = {
+  hooks: {
+    "commit-msg":
+      "commitlint --config ./commitlint.config.js -E HUSKY_GIT_PARAMS",
+    "pre-commit": "lint-staged"
+  }
+};
